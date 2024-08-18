@@ -1,0 +1,9 @@
+.navbar {
+  width: 296px;
+}
+
+.aside-nav-item a:hover,
+.aside-nav-item a:active {
+  border-left: 3px solid var(--bs-success);
+  color: var(--bs-success) !important;
+}
