@@ -4,15 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    />
-    <title>index</title>
+    <title>Main-assignment</title>
   </head>
   <body>
     <div class="d-flex">
-      <%- include('./layout/header'); -%>
+      <%- include('./layout/header', {page: 'assignment'}); -%>
 
       <main class="px-4 content">
         <header>
@@ -267,9 +263,7 @@
                           ></a
                         >
                         <a href=""
-                          ><span class="material-symbols-outlined">
-                            edit
-                          </span></a
+                          ><span class="material-icons"> edit </span></a
                         >
                       </div>
                     </div>
@@ -322,11 +316,13 @@
                   Reply
                 </button>
                 <div
-                  class="collapse position-absolute bottom-0 end-0 w-584"
+                  class="collapse position-absolute bottom-0 end-0"
                   id="collapseExample"
                 >
                   <div class="card">
-                    <div class="card-header d-flex align-items-center">
+                    <div
+                      class="card-header d-flex align-items-center py-3 pr-120"
+                    >
                       <div class="navbar-expand-lg me-4">
                         <div class="ps-0">
                           <button
@@ -392,21 +388,34 @@
                     </div>
                     <div class="card-body d-flex flex-column align-items-end">
                       <textarea
-                        class="form-control border-0 no-resize"
+                        class="form-control border-0 no-resize my-2"
+                        rows="7"
                         name=""
                         id=""
                         placeholder="Reply an answer…"
                       ></textarea>
-                      <button
-                        class="btn btn-success"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseExample"
-                        aria-expanded="false"
-                        aria-controls="collapseExample"
-                      >
-                        Reply
-                      </button>
+                      <div>
+                        <button
+                          class="btn btn-outline-success rounded-1 px-4 me-2 fw-bold"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseExample"
+                          aria-expanded="false"
+                          aria-controls="collapseExample"
+                        >
+                          Cancel
+                        </button>
+                        <button
+                          class="btn btn-success rounded-1 px-4 fw-bold"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseExample"
+                          aria-expanded="false"
+                          aria-controls="collapseExample"
+                        >
+                          Reply
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>

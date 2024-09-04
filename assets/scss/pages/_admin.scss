@@ -1,0 +1,37 @@
+thead {
+  border-bottom: 1px solid #212529;
+}
+
+.link-hover-success:hover {
+  color: $success;
+}
+
+.profile th {
+  font-weight: normal;
+}
+
+.choose-level button {
+  color: $gray-600;
+  border: 1px solid var(--gray-900);
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #212529;
+  border-radius: 2px;
+  padding: 16px;
+  &:hover {
+    border: 1px solid #212529;
+  }
+}
+
+.custom-access .form-check-input {
+  border: 1px solid black;
+}
+.custom-access .list-group-item {
+  border: 0px;
+  padding-left: 0;
+}
+
+.verified-badge {
+  color: #212529;
+  background: #f8f9fa;
+  border-radius: 2px;
+}
