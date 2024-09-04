@@ -4,13 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    />
-    <title>index</title>
-    <script type="module" crossorigin src="/2024-hexschool-web-layout-training-week5-bootstrap5/assets/main-1fc049b3.js"></script>
-    <link rel="stylesheet" href="/2024-hexschool-web-layout-training-week5-bootstrap5/assets/main-014b8742.css">
+    <title>Main-assignment</title>
+    <script type="module" crossorigin src="/2024-hexschool-web-layout-training-week5-bootstrap5/assets/main-bee1ba3e.js"></script>
+    <link rel="stylesheet" href="/2024-hexschool-web-layout-training-week5-bootstrap5/assets/main-9e8201cc.css">
   </head>
   <body>
     <div class="d-flex">
@@ -40,11 +36,11 @@
             Question</a
           >
         </li>
-        <li class="nav-item">
+        <li class="nav-item aside-nav-item">
           <a
-            class="nav-link active border-start border-3 border-success text-success"
+            class="nav-link active border-success text-success "
             aria-current="page"
-            href="#"
+            href="./index.html"
           >
             <span class="material-symbols-outlined align-bottom me-3 ms-4">
               assignment
@@ -61,7 +57,10 @@
           >
         </li>
         <li class="nav-item aside-nav-item">
-          <a class="nav-link active" href="#">
+          <a
+            class="nav-link active "
+            href="./admin.html"
+          >
             <span class="material-symbols-outlined align-bottom me-3 ms-4">
               supervisor_account
             </span>
@@ -352,9 +351,7 @@
                           ></a
                         >
                         <a href=""
-                          ><span class="material-symbols-outlined">
-                            edit
-                          </span></a
+                          ><span class="material-icons"> edit </span></a
                         >
                       </div>
                     </div>
@@ -407,11 +404,13 @@
                   Reply
                 </button>
                 <div
-                  class="collapse position-absolute bottom-0 end-0 w-584"
+                  class="collapse position-absolute bottom-0 end-0"
                   id="collapseExample"
                 >
                   <div class="card">
-                    <div class="card-header d-flex align-items-center">
+                    <div
+                      class="card-header d-flex align-items-center py-3 pr-120"
+                    >
                       <div class="navbar-expand-lg me-4">
                         <div class="ps-0">
                           <button
@@ -477,21 +476,34 @@
                     </div>
                     <div class="card-body d-flex flex-column align-items-end">
                       <textarea
-                        class="form-control border-0 no-resize"
+                        class="form-control border-0 no-resize my-2"
+                        rows="7"
                         name=""
                         id=""
                         placeholder="Reply an answer…"
                       ></textarea>
-                      <button
-                        class="btn btn-success"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseExample"
-                        aria-expanded="false"
-                        aria-controls="collapseExample"
-                      >
-                        Reply
-                      </button>
+                      <div>
+                        <button
+                          class="btn btn-outline-success rounded-1 px-4 me-2 fw-bold"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseExample"
+                          aria-expanded="false"
+                          aria-controls="collapseExample"
+                        >
+                          Cancel
+                        </button>
+                        <button
+                          class="btn btn-success rounded-1 px-4 fw-bold"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseExample"
+                          aria-expanded="false"
+                          aria-controls="collapseExample"
+                        >
+                          Reply
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
