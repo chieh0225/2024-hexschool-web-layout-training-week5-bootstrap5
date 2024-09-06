@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Main-Admin</title>
-    <script type="module" crossorigin src="/2024-hexschool-web-layout-training-week5-bootstrap5/assets/main-bee1ba3e.js"></script>
-    <link rel="stylesheet" href="/2024-hexschool-web-layout-training-week5-bootstrap5/assets/main-9e8201cc.css">
+    <script type="module" crossorigin src="/2024-hexschool-web-layout-training-week5-bootstrap5/assets/main-949aa2a1.js"></script>
+    <link rel="stylesheet" href="/2024-hexschool-web-layout-training-week5-bootstrap5/assets/main-3a2d3a98.css">
   </head>
   <body>
     <aside
@@ -219,49 +219,84 @@
                         <h5 class="fw-bold my-3">Custom Access</h5>
                         <ul class="list-group">
                           <li class="list-group-item">
-                            <input
-                              class="form-check-input me-1"
-                              type="checkbox"
-                              value=""
-                              aria-label="..."
-                            />
-                            Lecture
+                            <div class="form-check">
+                              <input
+                                class="form-check-input me-1"
+                                type="checkbox"
+                                value=""
+                                aria-label="..."
+                                id="flexCheckDefault1"
+                              />
+                              <label
+                                class="form-check-label"
+                                for="flexCheckDefault1"
+                                >Lecture</label
+                              >
+                            </div>
                           </li>
                           <li class="list-group-item">
-                            <input
-                              class="form-check-input me-1"
-                              type="checkbox"
-                              value=""
-                              aria-label="..."
-                            />
-                            Coupon
+                            <div class="form-check">
+                              <input
+                                class="form-check-input me-1"
+                                type="checkbox"
+                                value=""
+                                aria-label="..."
+                                id="flexCheckDefault2"
+                              />
+                              <label
+                                class="form-check-label"
+                                for="flexCheckDefault2"
+                                >Coupon</label
+                              >
+                            </div>
                           </li>
                           <li class="list-group-item">
-                            <input
-                              class="form-check-input me-1"
-                              type="checkbox"
-                              value=""
-                              aria-label="..."
-                            />
-                            Message
+                            <div class="form-check">
+                              <input
+                                class="form-check-input me-1"
+                                type="checkbox"
+                                value=""
+                                aria-label="..."
+                                id="flexCheckDefault3"
+                              />
+                              <label
+                                class="form-check-label"
+                                for="flexCheckDefault3"
+                                >Message</label
+                              >
+                            </div>
                           </li>
                           <li class="list-group-item">
-                            <input
-                              class="form-check-input me-1"
-                              type="checkbox"
-                              value=""
-                              aria-label="..."
-                            />
-                            Setting
+                            <div class="form-check">
+                              <input
+                                class="form-check-input me-1"
+                                type="checkbox"
+                                value=""
+                                aria-label="..."
+                                id="flexCheckDefault4"
+                              />
+                              <label
+                                class="form-check-label"
+                                for="flexCheckDefault4"
+                                >Setting</label
+                              >
+                            </div>
                           </li>
                           <li class="list-group-item">
-                            <input
-                              class="form-check-input me-1"
-                              type="checkbox"
-                              value=""
-                              aria-label="..."
-                            />
-                            Task Menu
+                            <div class="form-check">
+                              <input
+                                class="form-check-input me-1"
+                                type="checkbox"
+                                value=""
+                                aria-label="..."
+                                id="flexCheckDefault5"
+                              />
+                              <label
+                                class="form-check-label"
+                                for="flexCheckDefault5"
+                                >Task Menu</label
+                              >
+                            </div>
                           </li>
                         </ul>
                       </div>
@@ -574,21 +609,56 @@
       </table>
 
       <!-- Button group -->
-      <div class="d-flex justify-content-end">
-        <div class="btn-group mt-5 mb-4" role="group" aria-label="Button group">
-          <button type="button" class="btn btn-outline-success p-1">
-            <span class="material-icons align-middle"> chevron_left </span>
-          </button>
-
-          <button type="button" class="btn btn-success">1</button>
-          <button type="button" class="btn btn-outline-success">2</button>
-          <button type="button" class="btn btn-outline-success">3</button>
-
-          <button type="button" class="btn btn-outline-success p-1">
-            <span class="material-icons align-middle"> chevron_right </span>
-          </button>
-        </div>
-      </div>
+      <nav
+        aria-label="Page navigation example"
+        class="d-flex justify-content-end"
+      >
+        <ul class="pagination mt-5 mb-4">
+          <li class="page-item">
+            <a
+              class="page-link border-2 border-end-0 border-success text-success link-hover-white bg-hover-success px-1"
+              href="#"
+              aria-label="Previous"
+            >
+              <span aria-hidden="true" class="material-icons align-middle">
+                chevron_left
+              </span>
+            </a>
+          </li>
+          <li class="page-item">
+            <a
+              class="page-link border-2 border-end-0 border-success text-black link-hover-white bg-hover-success h-100"
+              href="#"
+              >1</a
+            >
+          </li>
+          <li class="page-item">
+            <a
+              class="page-link border-2 border-end-0 border-success text-black link-hover-white bg-hover-success h-100"
+              href="#"
+              >2</a
+            >
+          </li>
+          <li class="page-item">
+            <a
+              class="page-link border-2 border-end-0 border-success text-black link-hover-white bg-hover-success h-100"
+              href="#"
+              >3</a
+            >
+          </li>
+          <li class="page-item">
+            <a
+              class="page-link border-2 border-success text-success link-hover-white bg-hover-success px-1"
+              href="#"
+              aria-label="Next"
+            >
+              <span aria-hidden="true" class="material-icons align-middle">
+                chevron_right
+              </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
     </main>
 
     <!-- Visibility Modal -->
@@ -698,7 +768,8 @@
                   type="text"
                   class="form-control bg-light border-0"
                   id="editInputName1"
-                  placeholder="Emir Wicks"
+                  value="Emir Wicks"
+                  readonly
                 />
               </div>
               <div class="mb-3">
@@ -709,7 +780,8 @@
                   type="email"
                   class="form-control bg-light border-0"
                   id="editInputEmail1"
-                  placeholder="emir.wicks@mail.com"
+                  value="emir.wicks@mail.com"
+                  readonly
                 />
               </div>
             </form>
@@ -766,49 +838,74 @@
               <h5 class="fw-bold my-3">Custom Access</h5>
               <ul class="list-group">
                 <li class="list-group-item">
-                  <input
-                    class="form-check-input me-1"
-                    type="checkbox"
-                    value=""
-                    aria-label="..."
-                  />
-                  Lecture
+                  <div class="form-check">
+                    <input
+                      class="form-check-input me-1"
+                      type="checkbox"
+                      value=""
+                      aria-label="..."
+                      id="flexCheck1"
+                    />
+                    <label class="form-check-label" for="flexCheck1"
+                      >Lecture</label
+                    >
+                  </div>
                 </li>
                 <li class="list-group-item">
-                  <input
-                    class="form-check-input me-1"
-                    type="checkbox"
-                    value=""
-                    aria-label="..."
-                  />
-                  Coupon
+                  <div class="form-check">
+                    <input
+                      class="form-check-input me-1"
+                      type="checkbox"
+                      value=""
+                      aria-label="..."
+                      id="flexCheck2"
+                    />
+                    <label class="form-check-label" for="flexCheck2"
+                      >Coupon</label
+                    >
+                  </div>
                 </li>
                 <li class="list-group-item">
-                  <input
-                    class="form-check-input me-1"
-                    type="checkbox"
-                    value=""
-                    aria-label="..."
-                  />
-                  Message
+                  <div class="form-check">
+                    <input
+                      class="form-check-input me-1"
+                      type="checkbox"
+                      value=""
+                      aria-label="..."
+                      id="flexCheck3"
+                    />
+                    <label class="form-check-label" for="flexCheck3"
+                      >Message</label
+                    >
+                  </div>
                 </li>
                 <li class="list-group-item">
-                  <input
-                    class="form-check-input me-1"
-                    type="checkbox"
-                    value=""
-                    aria-label="..."
-                  />
-                  Setting
+                  <div class="form-check">
+                    <input
+                      class="form-check-input me-1"
+                      type="checkbox"
+                      value=""
+                      aria-label="..."
+                      id="flexCheck4"
+                    />
+                    <label class="form-check-label" for="flexCheck4"
+                      >Setting</label
+                    >
+                  </div>
                 </li>
                 <li class="list-group-item">
-                  <input
-                    class="form-check-input me-1"
-                    type="checkbox"
-                    value=""
-                    aria-label="..."
-                  />
-                  Task Menu
+                  <div class="form-check">
+                    <input
+                      class="form-check-input me-1"
+                      type="checkbox"
+                      value=""
+                      aria-label="..."
+                      id="flexCheck5"
+                    />
+                    <label class="form-check-label" for="flexCheck5"
+                      >Task Menu</label
+                    >
+                  </div>
                 </li>
               </ul>
             </div>
