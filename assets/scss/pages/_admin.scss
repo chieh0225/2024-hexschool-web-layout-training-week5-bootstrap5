@@ -3,7 +3,13 @@ thead {
 }
 
 .link-hover-success:hover {
-  color: $success;
+  color: $success !important;
+}
+.link-hover-white:hover {
+  color: white !important;
+}
+.bg-hover-success:hover {
+  background: $success !important;
 }
 
 .profile th {
@@ -34,4 +40,10 @@ thead {
   color: #212529;
   background: #f8f9fa;
   border-radius: 2px;
+}
+
+input[readonly] {
+  outline: none !important;
+  box-shadow: none !important;
+  border-color: inherit;
 }
